@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj" />
     <ProjectReference Include="..\Core\Core.csproj" />
     <ProjectReference Include="..\DapperDAL\DapperDAL.csproj" />
     <ProjectReference Include="..\MockDAL\MockDAL.csproj" />

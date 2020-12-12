@@ -14,11 +14,11 @@ namespace DapperDAL.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        private IDbConnection db; // = new MySql.Data.MySqlClient.MySqlConnection(ConfigurationManager.ConnectionStrings["Default"].ConnectionString);
+        private IDbConnection db = new MySql.Data.MySqlClient.MySqlConnection(ConfigurationManager.ConnectionStrings["Default"].ConnectionString);
 
-        public Repository(IDbConnection connection)
+        public IDbConnection DbConnection
         {
-            db = connection;
+            get { return db; }
         }
         public TEntity Add(TEntity entity)
         {

@@ -9,11 +9,6 @@ namespace DapperDAL.Repositories
 {
     public class ProjectRepository : Repository<Project>, IProjectRepository
     {
-        private readonly IDbConnection connection;
 
-        public ProjectRepository(IDbConnectionFactory connectionFactory) : base(connectionFactory.GetConnection())
-        {
-            this.connection = connectionFactory.GetConnection();
-        }
     }
 }

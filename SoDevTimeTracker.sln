@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{D58331EE-0834-47CD-9E0B-680E14201AF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{D58331EE-0834-47CD-9E0B-680E14201AF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{5D350C71-FC09-4A9C-B0D0-C7DEC728797A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{5D350C71-FC09-4A9C-B0D0-C7DEC728797A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDAL", "DapperDAL\DapperDAL.csproj", "{B75B1DDF-4222-409C-B67F-0B48BC11A09E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperDAL", "DapperDAL\DapperDAL.csproj", "{B75B1DDF-4222-409C-B67F-0B48BC11A09E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{429DAF27-684D-4CEF-B08F-4D3814615962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{429DAF27-684D-4CEF-B08F-4D3814615962}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockDAL", "MockDAL\MockDAL.csproj", "{CA7DE626-E00B-4AB2-9FA2-3EB4DFFD02FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MockDAL", "MockDAL\MockDAL.csproj", "{CA7DE626-E00B-4AB2-9FA2-3EB4DFFD02FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{04D6931B-B117-4559-92EC-0737C3616E64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{CA7DE626-E00B-4AB2-9FA2-3EB4DFFD02FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA7DE626-E00B-4AB2-9FA2-3EB4DFFD02FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA7DE626-E00B-4AB2-9FA2-3EB4DFFD02FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04D6931B-B117-4559-92EC-0737C3616E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D6931B-B117-4559-92EC-0737C3616E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D6931B-B117-4559-92EC-0737C3616E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D6931B-B117-4559-92EC-0737C3616E64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

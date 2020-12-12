@@ -7,7 +7,7 @@ using System.Text;
 
 namespace MockDAL.Repositories
 {
-    public class ProjectRepository : IRepository<Project>
+    public class ProjectRepository : IProjectRepository, IRepository<Project>
     {
         List<Project> projects = new List<Project>
         {
