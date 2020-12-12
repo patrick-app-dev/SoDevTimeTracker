@@ -32,6 +32,7 @@ namespace API
             services.AddSwaggerGen();
             services.AddAutoMapper(typeof(Startup));
             services.AddProjectRepositories();
+            services.AddProjectCommands();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commnds\Customer\" />
-    <Folder Include="Commnds\App\" />
-    <Folder Include="Commnds\TimeLog\" />
-    <Folder Include="Commnds\WorkTask\" />
     <Folder Include="Dto\" />
   </ItemGroup>
 

@@ -1,13 +1,14 @@
 ﻿using Core.Interfaces;
+using Core.Interfaces.Commands;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace API.Commnds.Project
+namespace BLL.Commnds.Project
 {
-    public class GetProjectCommand : ICommand<int>
+    public class GetProjectCommand : IGetProjectCommand
     {
         private readonly IProjectRepository projectRepository;
 

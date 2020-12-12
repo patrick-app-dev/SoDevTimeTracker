@@ -1,4 +1,4 @@
-﻿using API.Commnds.Project;
+﻿using Core.Interfaces.Commands;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -22,7 +22,7 @@ namespace API.Controllers
 
         // GET api/<ProjectsController>/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id, [FromServices] GetProjectCommand command)
+        public IActionResult Get(int id, [FromServices] IGetProjectCommand command)
         {
             return command.Execute(id);
         }

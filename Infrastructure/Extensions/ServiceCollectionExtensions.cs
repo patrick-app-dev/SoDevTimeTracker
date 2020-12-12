@@ -6,6 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Core.Interfaces.Commands;
+using BLL.Commnds.Project;
 
 namespace Infrastructure.Extensions
 {
@@ -13,10 +15,12 @@ namespace Infrastructure.Extensions
     {
         public static IServiceCollection AddProjectRepositories(this IServiceCollection services) =>
            services
-            .AddSingleton<IDbConnectionFactory, DbConnectionFactory>()
-            .AddSingleton<IRepository<Project>, MockDAL.Repositories.ProjectRepository>();
-            //.AddSingleton<IProjectRepository, ProjectRepository>();
+            .AddSingleton<IProjectRepository, MockDAL.Repositories.ProjectRepository>();
+        //.AddSingleton<IProjectRepository, ProjectRepository>();
 
+        public static IServiceCollection AddProjectCommands(this IServiceCollection services) =>
+            services
+                .AddSingleton<IGetProjectCommand, GetProjectCommand>();
 
     }
 }
