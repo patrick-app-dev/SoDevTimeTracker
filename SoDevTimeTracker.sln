@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MockDAL", "MockDAL\MockDAL.csproj", "{CA7DE626-E00B-4AB2-9FA2-3EB4DFFD02FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{04D6931B-B117-4559-92EC-0737C3616E64}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{CA7DE626-E00B-4AB2-9FA2-3EB4DFFD02FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA7DE626-E00B-4AB2-9FA2-3EB4DFFD02FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA7DE626-E00B-4AB2-9FA2-3EB4DFFD02FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{04D6931B-B117-4559-92EC-0737C3616E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04D6931B-B117-4559-92EC-0737C3616E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04D6931B-B117-4559-92EC-0737C3616E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04D6931B-B117-4559-92EC-0737C3616E64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

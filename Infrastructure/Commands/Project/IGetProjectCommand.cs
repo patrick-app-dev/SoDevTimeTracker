@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Core.Interfaces.Commands
+namespace Infrastructure.Commands.Project
 {
     public interface IGetProjectCommand : ICommand<int>
     {

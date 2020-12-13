@@ -33,6 +33,8 @@ namespace API
             services.AddAutoMapper(typeof(Startup));
             services.AddProjectRepositories();
             services.AddProjectCommands();
+            services.AddProjectValidators();
+            services.Configure<ApiBehaviorOptions>(opt => { opt.SuppressModelStateInvalidFilter = true; });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

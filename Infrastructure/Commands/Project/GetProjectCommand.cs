@@ -1,12 +1,12 @@
 ﻿using Core.Interfaces;
-using Core.Interfaces.Commands;
+using Infrastructure.Commands.Project;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BLL.Commnds.Project
+namespace Infrastructure.Commnds.Project
 {
     public class GetProjectCommand : IGetProjectCommand
     {

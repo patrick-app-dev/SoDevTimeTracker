@@ -6,8 +6,11 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Core.Interfaces.Commands;
-using BLL.Commnds.Project;
+using Infrastructure.Commnds.Project;
+using FluentValidation;
+using Infrastructure.DTO.Request;
+using Microsoft.AspNetCore.Mvc;
+using Infrastructure.Commands.Project;
 
 namespace Infrastructure.Extensions
 {
@@ -20,7 +23,14 @@ namespace Infrastructure.Extensions
 
         public static IServiceCollection AddProjectCommands(this IServiceCollection services) =>
             services
-                .AddSingleton<IGetProjectCommand, GetProjectCommand>();
+                .AddSingleton<IGetProjectCommand, GetProjectCommand>()
+                .AddSingleton<IPostProjectCommand, PostProjectCommand>();
+        public static IServiceCollection AddProjectValidators(this IServiceCollection services) =>
+            //Register DTO Validators
+            services
+                .AddTransient<IValidator<CreateProjectRequest>, CreateProjectRequestValidator>();
 
+            //Disable Automatic Model State Validation built-in to ASP.NET Core
+            //services.Configure<ApiBehaviorOptions>(opt => { opt.SuppressModelStateInvalidFilter = true; });
     }
 }

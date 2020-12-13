@@ -1,4 +1,6 @@
-﻿using Core.Interfaces.Commands;
+﻿using Infrastructure.Commands.Project;
+using Infrastructure.Constants;
+using Infrastructure.DTO.Request;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -21,16 +23,19 @@ namespace API.Controllers
         }
 
         // GET api/<ProjectsController>/5
-        [HttpGet("{id}")]
+
+        [HttpGet("{id}", Name = ProjectsControllerRoute.GetProject)]
         public IActionResult Get(int id, [FromServices] IGetProjectCommand command)
         {
             return command.Execute(id);
         }
 
         // POST api/<ProjectsController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("", Name = ProjectsControllerRoute.PostProject)]
+        public IActionResult Post([FromBody] CreateProjectRequest postedProject, [FromServices] IPostProjectCommand command)
         {
+            if (!ModelState.IsValid) return new BadRequestResult();
+            return command.Execute(postedProject);
         }
 
         // PUT api/<ProjectsController>/5
